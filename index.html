@@ -3,44 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sujan Nepali - Portfolio</title>
+    <title>Sujan Nepali</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <!-- Font Awesome for icons -->
+    <!-- Icon Libraries -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
 </head>
 <body>
+
+    <!-- ================== -->
+    <!-- VERTICAL SIDEBAR NAV -->
+    <!-- ================== -->
+    <nav class="sidebar-nav">
+        <ul>
+            <li><a href="#home" class="active" data-tooltip="Home"><i class="fas fa-home"></i></a></li>
+            <li><a href="#about" data-tooltip="About"><i class="fas fa-user"></i></a></li>
+            <li><a href="#experience" data-tooltip="Experience"><i class="fas fa-briefcase"></i></a></li>
+            <li><a href="#education" data-tooltip="Education"><i class="fas fa-graduation-cap"></i></a></li>
+            <li><a href="#publications" data-tooltip="Publications"><i class="fas fa-book-open"></i></a></li>
+            <li><a href="#skills" data-tooltip="Skills"><i class="fas fa-cogs"></i></a></li>
+            <li><a href="#contact" data-tooltip="Contact"><i class="fas fa-envelope"></i></a></li>
+            <li><a href="src/doc/SUJAN NEPALI RESUME.pdf" target="_blank" rel="noopener noreferrer" data-tooltip="Download CV"><i class="fas fa-download"></i></a></li>
+        </ul>
+    </nav>
+
     <!-- Header Section -->
     <header>
         <nav>
             <div class="logo">SUJAN NEPALI</div>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <!-- <li><a href="blogs.html">Blogs</a></li> -->
+                <!-- <li><a href="mycreativity.html">My Creativity</a></li> -->
             </ul>
         </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Home Section -->
     <section id="home" class="hero">
         <div class="hero-content">
             <div class="hero-image">
-                <img src="src/sujan.jpg" alt="Sujan Nepali" class="profile-image">
+                <img src="src/img/SUJAN_NEPALI_ENHANCED.jpg" alt="Sujan Nepali" class="profile-image">
             </div>
             <div class="hero-text">
                 <h1>Sujan Nepali</h1>
-                <h2>Geospatial Analyst & Geomatics Engineer</h2>
-                <p class="brief-intro">Harnessing geographic data for spatial innovations</p>
+                <h2>Geospatial enthusiast</h2>
+                <p class="brief-intro">Turning geographic data into data-driven decisions for a sustainable future</p>
                 <div class="social-links">
-                    <a href="#" title="Website"><i class="fas fa-globe"></i></a>
-                    <a href="https://www.linkedin.com/in/sujan-nepali-b45729123/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.nepalisujan.com.np/" title="Website"><i class="fas fa-globe"></i></a>
+                    <a href="https://www.linkedin.com/in/sujan-nepali-b45729123/" title="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/sujannepali" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                     <a href="mailto:nepsujan17@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="#" title="Resume"><i class="fas fa-file-alt"></i></a>
+                    <a href="src/doc/SUJAN NEPALI RESUME.pdf" title="Resume" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="interests-section">
+            <h3>Areas of Interest</h3>
+            <div class="interests-grid">
+                <div class="interest-item" data-category="analysis">
+                <i class="bi bi-globe-americas"></i>
+                <h4>Core Spatial Analysis</h4>
+                <p>Identifying patterns and insights from geographic data to support strategic decision-making.</p>
+                </div>
+                <div class="interest-item" data-category="modeling">
+                <i class="bi bi-graph-up"></i>
+                <h4>Connecting Agriculture, Geospatial and Statistics</h4>
+                <p>Building models to understand the problem and provides solutions existing in Agriculture.</p>
+                </div>
+                <div class="interest-item" data-category="ai">
+                <i class="bi bi-robot"></i>
+                <h4>Geo-AI, Machine Learning & Deep Learning</h4>
+                <p>Applying machine learning or deep learning to classify satellite imagery and extract features from complex datasets.</p>
+                </div>
+                <div class="interest-item" data-category="data">
+                <i class="bi bi-database-check"></i>
+                <h4>Geospatial Data Engineering</h4>
+                <p>Managing and optimizing spatial databases, and cloud-based geo-infrastructure.</p>
+                </div>
+                <div class="interest-item" data-category="cartography">
+                <i class="bi bi-map"></i>
+                <h4>Interactive Cartography</h4>
+                <p>Designing compelling web maps and dashboards to visualize and communicate complex spatial stories.</p>
+                </div>
+                <div class="interest-item" data-category="3d">
+                <i class="bi bi-boxes"></i>
+                <h4>Web development</h4>
+                <p>In a phase of learning to implement the spatial works to visualize in the interactive environment.</p>
                 </div>
             </div>
         </div>
@@ -48,276 +101,242 @@
 
     <!-- About Section -->
     <section id="about" class="about">
-        <h2>About Me</h2>
+        <h3>About Me</h3>
         <div class="about-content">
-            <p>
-                I'm a Geomatics Engineer with hands-on experience. I am currently 
-                working as a Geospatial Analyst at ICIMOD, where I joined after working as a consultant for a year.
-
-                Before this, I spent 4 years teaching GIS, Remote Sensing, Cartography, and Surveying as 
-                a Geomatics instructor. I enjoy both the technical work and sharing knowledge with others.
-
-                My work focuses on using GIS software and remote sensing tools to analyze geographic data 
-                and solve real-world mapping challenges.
-            </p>
+            <p><strong>Geomatics Engineer | Geospatial enthusiast | GIS & Remote Sensing Expert</strong></p> 
+            <p>With over 6 years of hands-on experience in geospatial technologies, I bring a unique blend of technical precision and academic depth to every project. Currently, I serve as a geospatial expert at <strong>ICIMOD</strong>, where I deliver high-impact solutions in renewable energy, for the identification of energy demand in the potential area for river based lift irrigation using advanced GIS and remote sensing tools and data analysis. The platform for this solutions is prepared for Nepal and Bhutan and we called it PURE platform. </p> 
+            <p>My journey for 4 years was in academia, where I dedicated as a Geomatics instructor in <strong>GIS, Remote Sensing, Cartography, and Surveying</strong>. This teaching experience not only deepened my technical foundation but also sharpened my ability to translate complex concepts into actionable insights, a skill I carry into every aspect of my work.</p> 
+            <p>Whether building platforms, analyzing satellite imagery, or mentoring the next generation of geomatics professionals, I thrive on transforming geospatial data into real-world impact. I dont just map the world, I help shape smarter, more sustainable decisions through spatial intelligence.</p>
         </div>
     </section>
 
     <!-- Experience Section -->
     <section id="experience" class="experience">
-        <h2>Experience</h2>
-        <div class="experience-grid">
-            <div class="experience-card">
-                <div class="card-content">
-                    <div class="experience-header">
-                        <h3>Geospatial Analyst, SSA</h3>
-                        <span class="duration"><i class="far fa-calendar-alt"></i> July 2024 - Present</span>
-                    </div>
-                    <h4><i class="fas fa-building"></i> ICIMOD</h4>
-                    <p class="location"><i class="fas fa-map-marker-alt"></i> Khumaltar, Lalitpur, Nepal</p>
-                    <div class="experience-details">
-                        <p>Working for the preparation of the PURE platform for Bhutan, A solution-based platform for lift irrigation potential analysis in Bhutan</p>
-                    </div>
-                </div>
+        <h3>Experience</h3>
+        <div class="timeline">
+
+            <div class="timeline-item">
+            <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+            <div class="timeline-content">
+                <h4>Geospatial Analyst, SSA <span>– International Centre for Integrated Mountain Development (ICIMOD)</span></h4>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Khumaltar, Lalitpur, Nepal</p>
+                <span class="duration"><i class="far fa-calendar-alt"></i> July 2024 – Present</span>
+                <ul>
+                <li>Lead development of the <strong>PURE Platform</strong> for Bhutan</li>
+                <li>Analyze geospatial data for lift irrigation potential mapping</li>
+                <li>Collaborating with cross-disciplinary teams to implement spatial solutions</li>
+                </ul>
+            </div>
             </div>
 
-            <div class="experience-card">
-                <div class="card-content">
-                    <div class="experience-header">
-                        <h3>Geospatial Consultant</h3>
-                        <span class="duration"><i class="far fa-calendar-alt"></i> July 2023 – July 2024</span>
-                    </div>
-                    <h4><i class="fas fa-building"></i> ICIMOD</h4>
-                    <p class="location"><i class="fas fa-map-marker-alt"></i> Khumaltar, Lalitpur, Nepal</p>
-                    <div class="experience-details">
-                        <p>Working for the preparation of the PURE platform for Nepal, A solution-based platform for lift irrigation potential analysis in Nepal</p>
-                    </div>
-                </div>
+            <div class="timeline-item">
+            <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+            <div class="timeline-content">
+                <h4>Geospatial Consultant <span>– International Centre for Integrated Mountain Development (ICIMOD) </span></h4>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Khumaltar, Lalitpur, Nepal</p>
+                <span class="duration"><i class="far fa-calendar-alt"></i> July 2023 – July 2024</span>
+                <ul>
+                <li>Built geospatial models for lift irrigation in Nepal</li>
+                <li>Designed and tested spatial decision-support tools, called PURE platform for Nepal</li>
+                <li>Integrated GIS workflows and build a decision tools with the coordination with Regional Information Service team</li>
+                </ul>
+            </div>
             </div>
 
-            <div class="experience-card">
-                <div class="card-content">
-                    <div class="experience-header">
-                        <h3>Geomatics Instructor</h3>
-                        <span class="duration"><i class="far fa-calendar-alt"></i> Aug 2018 - Sept 2022</span>
-                    </div>
-                    <h4><i class="fas fa-building"></i> Nepal Banepa Polytechnic Institute</h4>
-                    <p class="location"><i class="fas fa-map-marker-alt"></i> Banepa, Kavrepalanchok, Nepal</p>
-                    <div class="experience-details">
-                        <p>Courses: GIS, Remote Sensing, Surveying (theory + field)</p>
-                    </div>
-                </div>
+            <div class="timeline-item">
+            <div class="timeline-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+            <div class="timeline-content">
+                <h4>Geomatics Instructor <span>– Nepal Banepa Polytechnic Institute</span></h4>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Banepa, Kavrepalanchok, Nepal</p>
+                <span class="duration"><i class="far fa-calendar-alt"></i> Aug 2018 – Sept 2022</span>
+                <ul>
+                <li>Taught core courses: <strong>GIS, Remote Sensing, Cartography, Surveying</strong></li>
+                <li>Conducted field-based surveying projects</li>
+                <li>Designed practical assignments to enhance technical skills</li>
+                </ul>
+            </div>
+            </div>
+            
+            <div class="timeline-item">
+            <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+            <div class="timeline-content">
+                <h4>Engineer Initiate Geomatics <span>– NEA Engineering Company Ltd</span></h4>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Maitighar, Kathmandu, Nepal</p>
+                <span class="duration"><i class="far fa-calendar-alt"></i> Nov 2017 - Dec 2017</span>
+                <ul>
+                <li>Project: “Study and Analysis of Optimal Distributed Generation for Access to Grid Electricity for All in five years with the participation of Local-level Government”</li>
+                <li>GIS mapping and field visit</li>
+                <li>Interaction with NEA staffs at Local-level</li>
+                </ul>
+            </div>
             </div>
 
-            <div class="experience-card">
-                <div class="card-content">
-                    <div class="experience-header">
-                        <h3>Engineer Initiate Geomatics</h3>
-                        <span class="duration"><i class="far fa-calendar-alt"></i> Nov 2017 - Dec 2017</span>
-                    </div>
-                    <h4><i class="fas fa-building"></i> NEA Engineering Company Ltd</h4>
-                    <p class="location"><i class="fas fa-map-marker-alt"></i> Maitighar, Kathmandu, Nepal</p>
-                    <div class="experience-details">
-                        <p>Project: "Study and Analysis of Optimal Distributed Generation for Access to Grid Electricity for All in five years with the participation of Local-level Government"<br>
-                        GIS mapping and field visit</p>
-                    </div>
-                </div>
+            <div class="timeline-item">
+            <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+            <div class="timeline-content">
+                <h4>GIS Field Researcher <span>– HERD International</span></h4>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Maitighar, Kathmandu, Nepal</p>
+                <span class="duration"><i class="far fa-calendar-alt"></i> August 2017</span>
+                <ul>
+                <li>Project: “Survey for Urban Equity”</li>
+                <li>GIS mapping to map buildings on Open Street Map</li>
+                <li>Field data collection using ODK questionnaires</li>
+                </ul>
+            </div>
             </div>
 
-            <div class="experience-card">
-                <div class="card-content">
-                    <div class="experience-header">
-                        <h3>GIS Field Researcher</h3>
-                        <span class="duration"><i class="far fa-calendar-alt"></i> Aug 2017</span>
-                    </div>
-                    <h4><i class="fas fa-building"></i> HERD International</h4>
-                    <p class="location"><i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal</p>
-                    <div class="experience-details">
-                        <p>Project: "Survey for Urban Equity"<br>
-                        Open street mapping and field surveying using the ODK questionnaire</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
+
 
     <!-- Education Section -->
     <section id="education" class="education">
-        <h2>Education</h2>
-        <div class="education-grid">
-            <div class="education-card">
-                <div class="education-header">
-                    <h3>Master of Engineering in Geoinformatics</h3>
-                    <p class="university">Kathmandu University</p>
-                    <div class="edu-meta">
-                        <span class="year">June 2024</span>
-                        <span class="gpa">CGPA: 3.91</span>
-                    </div>
-                </div>
-                <div class="education-content">
-                    <div class="major-subjects">
-                        <h4>Major Subjects:</h4>
-                        <p>GIS, Remote Sensing, Digital Image Processing, Machine Learning, Deep Learning in Remote Sensing, Scientific Geo-Computing, Spatial data infrastructure & open GIS</p>
-                    </div>
-                    <div class="thesis">
-                        <h4>Thesis:</h4>
-                        <p>"Mapping winter crops using high-resolution satellite images and machine learning algorithms."</p>
-                    </div>
-                </div>
+        <h3>Education</h3>
+        <div class="timeline">
+
+            <div class="timeline-item">
+            <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+            <div class="timeline-content">
+                <h4>Master of Engineering in Geoinformatics <span>– Kathmandu University</span></h4>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Dhulikhel, Kavrepalanchok, Nepal</p>
+                <span class="duration"><i class="far fa-calendar-alt"></i> Year completed: May 2024</span>
+                <ul>
+                <li>CGPA: <strong>3.91 </strong> out of 4</li>
+                <li>Thesis: <strong>Mapping winter crops using high-resolution satellite images and machine learning algorithms. </strong></li>
+                <li>Major subjects: GIS, Remote Sensing, Digital Image Processing, Machine Learning, Deep Learning in Remote Sensing, Scientific Geo-Computing, Spatial data infrastructure & open GIS</li>
+                </ul>
+            </div>
             </div>
 
-            <div class="education-card">
-                <div class="education-header">
-                    <h3>Bachelor of Engineering in Geomatics Engineering</h3>
-                    <p class="university">Kathmandu University</p>
-                    <div class="edu-meta">
-                        <span class="year">October 2017</span>
-                        <span class="gpa">CGPA: 3.56</span>
-                    </div>
-                </div>
-                <div class="education-content">
-                    <div class="major-subjects">
-                        <h4>Major Subjects:</h4>
-                        <p>GIS, Remote Sensing, Surveying, Photogrammetry, Geodesy, Spatial Database Management System, Spatial Data Infrastructure, Python</p>
-                    </div>
-                    <div class="thesis">
-                        <h4>Final year project:</h4>
-                        <p>"Land cover and fragmentation prediction of Chitwan National Park using remote sensing."</p>
-                    </div>
-                </div>
+            <div class="timeline-item">
+            <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+            <div class="timeline-content">
+                <h4>Bachelor of Engineering in Geomatics Engineering <span>– Kathmandu University</span></h4>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Dhulikhel, Kavrepalanchok, Nepal</p>
+                <span class="duration"><i class="far fa-calendar-alt"></i> Year completed: Oct 2017</span>
+                <ul>
+                <li>CGPA: <strong>3.56 </strong> out of 4</li>
+                <li>Final Year Project: <strong>Land cover and fragmentation prediction of Chitwan National Park using remote sensing. </strong></li>
+                <li>Major subjects: GIS, Remote Sensing, Surveying, Photogrammetry, Geodesy, Spatial Database Management System, Spatial Data Infrastructure, Python</li>
+                </ul>
             </div>
+            </div>
+
         </div>
     </section>
 
+
     <!-- Publications Section -->
     <section id="publications" class="publications">
-        <h2>Publications</h2>
-        <div class="publications-container">
-            <!-- Published Papers -->
-            <div class="pub-category">
-                <h3>Published Papers</h3>
-                <div class="pub-card">
-                    <div class="pub-content">
-                        <p class="authors">Pant, P., Thapa, N., Nepali, S., Sanjel, S.</p>
-                        <p class="title">"Land Cover Change Before and After the Sendai Framework of Disaster Risk Reduction."</p>
-                        <p class="year">2024</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Data Publications -->
-            <div class="pub-category">
-                <h3>Data Publications</h3>
-                <div class="pub-card">
-                    <div class="pub-content">
-                        <p class="authors">Bajimaya, D., Bade, B., Nepali, S., Schulthess, U., Sherpa R, S., Blasch, G., . . . Ajay, A.</p>
-                        <p class="title">"In-situ crop type data for the Terai region of Nepal for 2022-2023 winter season."</p>
-                        <p class="publisher">CIMMYT Research Data & Software Repository Network</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Conference Presentations -->
-            <div class="pub-category">
-                <h3>Conference Presentations</h3>
-                <div class="pub-card">
-                    <div class="pub-content">
-                        <p class="title">"Trend analysis of agro-meteorological parameters collected using IoT-based ground sensors."</p>
-                        <p class="conference">AGSE 2021</p>
-                        <p class="venue">Online-Conference, Kathmandu University, Nepal / Stuttgart University of Applied Sciences, Germany</p>
-                    </div>
-                </div>
-            </div>
+        <h3>Publications</h3>
+        <div class="pub-category">
+            <h4>Published Papers</h4>
+            <div class="pub-card"><p>Bade, B., Schulthess, U., Blasch, G., Sherpa, S. R., Shrestha, H. L., Bajimaya, D., Pinjarla, B., Kamal, M., and Nepali, S.: Temporal Sentinel-2 Imagery for Wheat mapping and monitoring: Analyzing Phenological Stages with Machine Learning to Improve Mapping Precision for Small Farms, ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci., X-G-2025, 143–149, https://doi.org/10.5194/isprs-annals-X-G-2025-143-2025, 2025.</p></div>
+            <div class="pub-card"><p>Pant, P., Thapa, N., Nepali, S., Sanjel, S. (2024). "Land Cover Change Before and After the Sendai Framework of Disaster Risk Reduction."</p></div>
+        </div>
+        <br></br>
+        <div class="pub-category">
+            <h4>Data Publications</h4>
+            <div class="pub-card"><p>Bajimaya, D., et al. "In-situ crop type data for the Terai region of Nepal for 2022-2023 winter season." CIMMYT Research Data & Software Repository Network.</p></div>
+        </div>
+        <br></br>
+        <div class="pub-category">
+            <h4>Conference Presentations</h4>
+            <div class="pub-card"><p>"Trend analysis of agro-meteorological parameters collected using IoT-based ground sensors." AGSE 2021, Online-Conference.</p></div>
         </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
-        <h2>Skills</h2>
+        <h3>Skills</h3>
         <div class="skills-container">
             <div class="skill-card">
-                <div class="skill-header">
-                    <i class="fas fa-map-marked-alt"></i>
-                    <h3>Survey Skills</h3>
-                </div>
-                <div class="skill-content">
-                    <ul>
-                        <li>Total station</li>
-                        <li>DGPS</li>
-                        <li>UAV</li>
-                        <li>Kobo Toolbox</li>
-                    </ul>
-                </div>
+                <div class="skill-header"><h4><i class="fas fa-map-marked-alt"></i> Survey & Field</h4></div>
+                <ul><li>Total station</li><li>DGPS</li><li>UAV</li><li>Kobo Toolbox</li></ul>
             </div>
-
             <div class="skill-card">
-                <div class="skill-header">
-                    <i class="fas fa-desktop"></i>
-                    <h3>Software Skills</h3>
-                </div>
-                <div class="skill-content">
-                    <ul>
-                        <li>ArcGIS Pro</li>
-                        <li>QGIS</li>
-                        <li>ArcGIS online</li>
-                        <li>ENVI</li>
-                        <li>ERDAS Imagine</li>
-                        <li>PIX4D</li>
-                        <li>Office packages</li>
-                    </ul>
-                </div>
+                <div class="skill-header"><h4><i class="fas fa-map-marked-alt"></i> Software</h4></div>
+                <ul><li>ArcGIS Pro</li><li>QGIS</li><li>ArcGIS Online</li><li>ENVI</li><li>ERDAS Imagine</li><li>PIX4D</li></ul>
             </div>
-
             <div class="skill-card">
-                <div class="skill-header">
-                    <i class="fas fa-code"></i>
-                    <h3>Programming Skills</h3>
-                </div>
-                <div class="skill-content">
-                    <ul>
-                        <li>Python</li>
-                        <li>Google Earth Engine</li>
-                        <li>R</li>
-                        <li>Matlab</li>
-                    </ul>
-                </div>
+                <div class="skill-header"><h4><i class="fas fa-code"></i> Programming</h4></div>
+                <ul><li>Python</li><li>Google Earth Engine</li><li>R</li><li>Matlab</li></ul>
             </div>
-
             <div class="skill-card">
-                <div class="skill-header">
-                    <i class="fas fa-users"></i>
-                    <h3>Other Skills</h3>
-                </div>
-                <div class="skill-content">
-                    <ul>
-                        <li>Communication</li>
-                        <li>Management</li>
-                        <li>Leadership</li>
-                        <li>Field Management</li>
-                    </ul>
-                </div>
+                <div class="skill-header"><h4><i class="fas fa-users"></i> Professional</h4></div>
+                <ul><li>Communication</li><li>Management</li><li>Leadership</li><li>Field Management</li></ul>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <h2>Contact Me</h2>
+        <h3>CONTACT</h3>
         <div class="contact-info">
+
+            <!-- Mobile Number -->
+            <div class="contact-item">
+                <i class="fas fa-mobile-alt"></i> <!-- Icon for mobile phone -->
+                <a href="tel:+9779861291592">+977-9861291592</a>
+            </div>
+
+            <!-- Email -->
             <div class="contact-item">
                 <i class="fas fa-envelope"></i>
                 <a href="mailto:nepsujan17@gmail.com">nepsujan17@gmail.com</a>
             </div>
+
+            <!-- Address -->
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i> <!-- Icon for address -->
+                <a href="https://www.google.com/maps/search/?api=1&query=Panauti,Kavrepalanchok,Nepal" target="_blank" rel="noopener noreferrer">
+                    Panauti, Kavrepalanchok, Nepal
+                </a>
+            </div>
+
+            <!-- LinkedIn -->
             <div class="contact-item">
                 <i class="fab fa-linkedin"></i>
-                <a href="https://www.linkedin.com/in/sujan-nepali-b45729123/">LinkedIn Profile</a>
+                <a href="https://www.linkedin.com/in/sujan-nepali-b45729123/" target="_blank" rel="noopener noreferrer">
+                    LinkedIn
+                </a>
             </div>
+            
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Sujan Nepali. All rights reserved.</p>
+        <p>© 2025 Sujan Nepali. All rights reserved.</p>
     </footer>
+    
+    <!-- JavaScript for Sidebar Active Link Highlighting -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.sidebar-nav a');
+
+            const activateLink = (id) => {
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${id}`) {
+                        link.classList.add('active');
+                    }
+                });
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        activateLink(entry.target.id);
+                    }
+                });
+            }, { rootMargin: '-40% 0px -60% 0px' }); // Adjust threshold to activate when section is more centered
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
 </body>
 </html>
