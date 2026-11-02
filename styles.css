@@ -353,3 +353,79 @@ footer {
     color: var(--text-secondary);
 }
 
+
+/* ================================== */
+/*          BLOG LIST & POSTS         */
+/* ================================== */
+
+.blog-list { display: grid; gap: 2rem; }
+
+.blog-card {
+    display: block;
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 2rem;
+    border: 1px solid var(--card-border);
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(44, 62, 80, 0.15);
+    border-color: var(--accent);
+}
+.blog-card h4 { font-size: 1.5rem; color: var(--text-primary); margin-bottom: 0.4rem; }
+.blog-card:hover h4 { color: var(--accent); }
+.blog-date { font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 0.8rem; }
+.blog-date i { color: var(--accent); margin-right: 0.4rem; }
+.blog-card p { margin-bottom: 0.8rem; }
+.blog-card h4 a { color: inherit; text-decoration: none; }
+.blog-card h4 a:hover { color: var(--accent); }
+.blog-summary:empty { display: none; }
+.read-more { color: var(--accent); font-weight: 700; text-decoration: none; }
+.read-more:hover { text-decoration: underline; }
+
+/* Single blog post page */
+.back-link { display: inline-block; margin-bottom: 1.5rem; color: var(--accent); text-decoration: none; font-weight: 700; }
+.back-link:hover { text-decoration: underline; }
+.post-title { margin-bottom: 0.5rem; }
+.post-meta { font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 2rem; }
+.post-meta i { color: var(--accent); margin-right: 0.4rem; }
+.post-content { background: var(--card-bg); border-radius: 16px; padding: 2rem; border: 1px solid var(--card-border); box-shadow: var(--card-shadow); }
+.post-content p { margin-bottom: 1.2rem; line-height: 1.8; }
+.post-content h4 { font-size: 1.4rem; margin: 1.5rem 0 0.75rem; }
+.post-content img { max-width: 100%; height: auto; border-radius: 10px; margin: 1rem 0; }
+
+/* ================================== */
+/*     BLOG POST: RICH CONTENT        */
+/* ================================== */
+
+.post-byline { font-size: 1rem; font-style: italic; color: var(--text-secondary); margin: -1rem 0 2rem; }
+
+/* "The short version" highlight box */
+.post-summary {
+    background: var(--bg-secondary);
+    border-left: 5px solid var(--accent);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+}
+.post-summary h4 { margin-top: 0; }
+.post-summary p { margin-bottom: 0; }
+
+/* Lists inside a post (the global reset removes their indent) */
+.post-content ul, .post-content ol { margin: 0 0 1.2rem; padding-left: 1.75rem; }
+.post-content li { font-size: 1.125rem; line-height: 1.7; color: var(--text-secondary); margin-bottom: 0.6rem; }
+.post-content li strong { color: var(--text-primary); }
+
+/* Images with captions */
+.post-content figure { margin: 1.5rem 0; text-align: center; }
+.post-content figure img { margin: 0 auto; box-shadow: var(--card-shadow); }
+.post-content figcaption { font-size: 0.95rem; font-style: italic; color: var(--text-secondary); margin-top: 0.6rem; }
+
+.post-contact { margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid var(--card-border); }
+
+@media (max-width: 768px) {
+    .post-content { padding: 1.25rem; }
+    .post-content li { font-size: 1rem; }
+}
