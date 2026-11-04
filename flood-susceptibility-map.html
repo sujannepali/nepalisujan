@@ -48,32 +48,32 @@
                 </div>
 
                 <h4>Why this matters for planning</h4>
-                <p>The November 2021 atmospheric river floods showed how quickly rain, rivers and low-lying land can combine to cut off roads, farms and communities across southwestern BC. When a storm is on the way, planners have to decide where to stage resources, which routes might close, and which neighbourhoods need early outreach. Those decisions are easier when you already know which areas are naturally more prone to flooding, before the first warning goes out.</p>
+                <p>The November 2021 atmospheric river floods showed how quickly rain, rivers and low-lying land can combine to cut off roads, farms and communities across southern BC. When a storm is on the way, planners have to decide where to stage resources, which routes might close, and which neighbourhoods need early outreach. Those decisions are easier when you already know which areas are naturally more prone to flooding, before the first warning goes out.</p>
 
                 <h4>One idea to keep &#128161;: "Susceptibility is not risk, and it is not a forecast"</h4>
                 <p>These three terms are often mixed up, so here is a simple way to separate them:</p>
                 <ul>
-                    <li><strong>Susceptibility</strong> asks: Where is the land more prone to flooding? It depends on the landscape, such as terrain, soils and how close water is.</li>
-                    <li><strong>Risk</strong> asks: What could be lost if a flood happens? It adds people, buildings and infrastructure to the picture.</li>
-                    <li><strong>A forecast</strong> asks: Will a flood happen soon, and how severe will it be? It depends on the weather and river conditions.</li>
+                    <li><strong>Susceptibility:</strong> Where is the land more prone to flooding? It depends on the landscape, such as terrain, soils and how close water bodies are.</li>
+                    <li><strong>Risk:</strong> What could be lost if a flood happens? It adds people, buildings and infrastructure to the picture.</li>
+                    <li><strong>A forecast:</strong> Will a flood happen soon, and how severe will it be? It depends on the weather and river conditions.</li>
                 </ul>
                 <p>So, a susceptibility map is a starting point for planning, not a prediction. The study area for this project is shown in Figure 1.</p>
 
                 <!-- <strong>Study Area for Flood Susceptibility Mapping</strong> -->
                 <figure>
                     <img src="src/img/flood-workflow.png" alt="Workflow: data layers, past flood records, machine learning, susceptibility map">
-                    <figcaption> <strong>Figure 1:</strong> Study area that covers mostly lower mainland of BC</figcaption>
+                    <figcaption> <strong>Figure 1:</strong> Study area that covers mostly lower mainland of BC (Map prepared by Sujan Nepali)</figcaption>
                 </figure>
                
 
-                <h4>How the map was made</h4>
-                <p>I built the map in four steps, without any special equipment beyond a computer and public data:</p>
+                <h4>Map Making Process</h4>
+                <p>I built the map in five steps:</p>
                 <ol>
                     <li><strong>Collected the datasets.</strong> I gathered data layers that influence flooding, such as elevation and slope, distance to rivers, soil, land cover, rainfall, and drainage density.</li>
-                    <li><strong>Learned from past floods.</strong> I used records of where flooding has occurred in the past using historical flood extents from BC data Catalogue and where it has not.</li>
+                    <li><strong>Learned from past floods.</strong> I used records of where flooding has occurred in the past using historical flood extents from BC data Catalogue.</li>
                     <li><strong>Trained machine learning models.</strong> The models looked for the combinations of landscape features most often linked to flooding. I used Random Forest machine learning model for this project.</li>
-                    <li><strong>Checked the results.</strong> I tested the model on test data. It provided separated flood-prone from less flood-prone areas.</li>
-                    <li><strong>Classified to two classes:</strong> Using a 50% probability threshold, the data was divided into two classes: flood-prone and non-flood-prone.</li>
+                    <li><strong>Validated the results.</strong> I tested the model on test data. It provided separated flood-prone from less flood-prone areas.</li>
+                    <li><strong>Classified:</strong> Using a 50% probability threshold, the data was divided into two classes: flood-prone and non-flood-prone.</li>
                 </ol>
 
 
@@ -81,7 +81,9 @@
 
                 <figure>
                     <img src="src/img/flood-susceptibility-map.png" alt="Flood susceptibility map of the Lower Mainland, BC">
-                    <figcaption>  <strong>Figure 2:</strong> Flood susceptibility across the Lower Mainland. Red colour show areas more prone to flooding, and black outlines are the actual flooded areas.</figcaption>
+                    <figcaption>  <strong>Figure 2:</strong> Flood susceptibility across the Lower Mainland. 
+                        Red colour show areas more prone to flooding, and black outlines are the actual flooded areas.
+                    (Map prepared by Sujan Nepali)</figcaption>
                 </figure>
                
 
@@ -89,7 +91,7 @@
                 <ul>
                     <li>"The most flood-prone areas follow the Fraser River floodplain and low-lying delta lands."</li>
                     <li>"The factors that mattered most were elevation, and distance to rivers."</li>
-                    <li>"About 55% of the study area falls in the high or very high susceptibility classes."</li>
+                    <li>"About 40% of the study area falls in the high susceptibility class."</li>
                 </ul>
 
                 <!-- IMAGE 3 (optional): one simple chart (share of area by class, or most important factors)
@@ -99,7 +101,7 @@
                 </figure>
                 -->
 
-                <h4>What the map does not show</h4>
+                <h4>Limitations</h4>
                 <p>It is important to be clear about limits:</p>
                 <ul>
                     <li>It shows relative susceptibility, not the depth, speed or timing of a flood.</li>
